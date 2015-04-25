@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- template to use below with mustache -->
+
+    <script type="text/template" id="template">
+        <div class='ui card'>
+  <div class='image'>
+    <img src={{avatar}}>
+  </div>
+  <div class='content'>
+    <a class='header'>{{name}}</a>
+    <div class='meta'>
+      <span class='date'>Is a Friend!</span>
+    </div>
+    <div class='description'>
+      <a href={{url}}> link to profile </a>
+    </div>
+  </div>
+  <div class='extra content'>
+    <a>
+      <i class='user icon'></i>
+      {{type}}
+    </a>
+  </div>
+</div>
+</br>
+
+
+    </script>
+
+
+
+    <!--stylesheets from Semantic-UI-->
+    <link rel="stylesheet" type="text/css" href="./public/card.css">
+
+    <!-- outside dependencies from CDNs. Mustache and Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.js"></script>
+
+    <!--...............................-->
+
+    <meta charset="UTF-8">
+    <title>GitHub Friends!</title>
+
+</head>
+<body>
+ 
+    <header>
+        <h1> Find Your Friends on GitHub!</h1>  
+    </header>
+
+
+
+    <input type="text" name="putaname" id="mainform">
+    <button id="submitbutton"> GH username </button>
+
+    <section id="container">
+    </section>
+
+
+
+</body>
+<script src="./client.js"></script>
+</html>
